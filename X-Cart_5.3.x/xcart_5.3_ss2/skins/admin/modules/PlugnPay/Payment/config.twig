@@ -1,0 +1,20 @@
+{##
+ # PlugnPay SSv2 configuration page
+ #}
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td colspan="2">
+      <p class="note text-left">{{ t('need_account') }}</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_pnp_gateway_account">{{ t('pnp_gateway_account') }}</label>
+    </td>
+    <td>
+      <input type="text" id="settings_pnp_gateway_account" name="settings[pnp_gateway_account]" value="{{ this.paymentMethod.getSetting('pnp_gateway_account') }}" class="validate[required,maxSize[25]]" />
+    </td>
+  </tr>
+</table>
+

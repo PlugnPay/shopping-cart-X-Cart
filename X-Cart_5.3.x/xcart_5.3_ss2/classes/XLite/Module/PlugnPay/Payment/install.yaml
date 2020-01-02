@@ -1,0 +1,20 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PlugnPay SSv2
+    class: Module\PlugnPay\Payment\Model\Payment\Processor\SS2Payment
+    type: C
+    translations:
+      - code: en
+        name: Smart Screens v2 Payment
+    settings:
+      - name: gateway_account
+
+XLite\Model\LanguageLabel:
+  - { name: "gateway_account", translations: [{ code: en, label: "Gateway Account" }] }
+  - { name: "need_account", translations: [{ code: en, label: "Don't have an account? <a href='https://www.plugnpay.com/' target='_blank'>Contact Us</a>" }] }
